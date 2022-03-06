@@ -2,6 +2,7 @@
 
 ### Walmart Login Screen.
 
+![login to category](screenshots.jpg)
 
 ![login to category](login.gif)
 
