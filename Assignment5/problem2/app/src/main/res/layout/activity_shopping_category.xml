@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ShoppingCategory">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="welcome hello@gmail.com" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Shop By Categories"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/grLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

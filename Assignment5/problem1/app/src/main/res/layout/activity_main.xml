@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="What does “HTTP” stand for?"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q1"
+        android:checkedButton="@+id/sound">
+
+        <RadioButton
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HyperText Transfer Protocol" />
+
+        <RadioButton
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet" />
+
+        <RadioButton
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/q"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Android is -"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="an operating system" />
+
+    <CheckBox
+        android:id="@+id/c2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a web browser" />
+
+    <CheckBox
+        android:id="@+id/c3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a web server" />
+
+    <CheckBox
+        android:id="@+id/c4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="None of the above" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myRadioGroup"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3F51B5"
+            android:gravity="center_horizontal"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myRadioGroup"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00BCD4"
+            android:gravity="center_horizontal"
+            android:text="Reset" />
+    </LinearLayout>
+</LinearLayout>

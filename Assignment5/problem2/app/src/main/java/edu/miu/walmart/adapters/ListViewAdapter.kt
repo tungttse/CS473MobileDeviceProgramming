@@ -1,6 +1,7 @@
-package edu.miu.walmart
+package edu.miu.walmart.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import edu.miu.walmart.R
 import edu.miu.walmart.models.Product
 
 class ListViewAdapter(private val context: Context,
@@ -50,12 +52,11 @@ class ListViewAdapter(private val context: Context,
             val colorTextView: TextView = itemView?.findViewById(R.id.productColor) as TextView
             print("TUNTT" + colorTextView.toString());
 
-            colorTextView.text = dataSource.get(position).color
+            colorTextView.text = "Color: "+ dataSource.get(position).color
 
             val priceTextView: TextView = itemView
                 .findViewById(R.id.productPrice) as TextView
-            priceTextView.text = dataSource.get(position).price.toString()
-
+            priceTextView.text = "Price: $" + dataSource.get(position).price.toString()
         } else {
             itemView = convertView as View?
         }

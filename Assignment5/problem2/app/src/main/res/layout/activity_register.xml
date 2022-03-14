@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:paddingTop="0dp"
+        android:text="Create your account"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/txtRequire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* require field" />
+
+        <TextView
+            android:id="@+id/txtFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="First name *" />
+
+        <EditText
+            android:id="@+id/txtInputFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/txtLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Last name *" />
+
+        <EditText
+            android:id="@+id/txtInputLastname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Email Address *" />
+
+        <EditText
+            android:id="@+id/txtInputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Password *" />
+
+        <EditText
+            android:id="@+id/txtInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#1788E1"
+            android:text="Create Account"
+            android:textAllCaps="true"
+            android:textColor="#FFFDFD" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
