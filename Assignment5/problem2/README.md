@@ -2,4 +2,7 @@
 
 ### Screenshots.
 
-![screenshots](screenshots.jpg)
+![screenshots](category.jpg)
+
+
+![screenshots](detail.jpg)

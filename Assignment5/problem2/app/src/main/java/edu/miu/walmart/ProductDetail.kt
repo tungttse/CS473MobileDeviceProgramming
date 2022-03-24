@@ -26,7 +26,10 @@ class ProductDetail : AppCompatActivity() {
             title.text = product.title
 
             val color = findViewById<TextView>(R.id.color)
-            color.text = product.color
+            color.text = "Color: " + product.color
+
+            val price = findViewById<TextView>(R.id.price)
+            price.text = "Price: " + product.price + "$"
 
             val itemid = findViewById<TextView>(R.id.itemid)
             itemid.text = "Walmart #: " + product.itemid
