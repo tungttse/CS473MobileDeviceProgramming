@@ -19,7 +19,7 @@
         tools:ignore="MissingConstraints" />
 
     <RadioGroup
-        android:id="@+id/myRadioGroup1"
+        android:id="@+id/groupRadio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/q1"
