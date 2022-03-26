@@ -6,9 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ProductList">
 
-    <ListView
+<!--    <ListView-->
+<!--        android:id="@+id/productList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/productList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
