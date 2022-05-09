@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
                 // Do nothing
             }
             override fun onPageSelected(position: Int) {
-                adjustFabBehaviour(position)
+                adjustFabBehaviour(position) // handle selected of the create button
             }
         })
     }
