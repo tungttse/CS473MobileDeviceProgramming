@@ -39,8 +39,6 @@ class ResultFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         score = ResultFragmentArgs.fromBundle(requireArguments()).correctAnswers
-        categoryName =
-            ResultFragmentArgs.fromBundle(requireArguments()).categoryName
         setupUI()
         setupButton()
     }
